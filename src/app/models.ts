@@ -11,6 +11,7 @@ export interface Game {
     ratings: Array<Rating>;
     screenshots:Array<Screenshots>;
     trailer: Array<Trailer>;
+    id: string;
 }
 
 export interface APIResponse<T> {
@@ -39,7 +40,7 @@ export interface APIResponse<T> {
  }
 
 interface Screenshots{
-    image:string;
+    image: string;
 }
 
 interface Trailer{
