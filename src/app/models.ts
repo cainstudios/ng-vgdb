@@ -7,7 +7,7 @@ export interface Game {
     description: string;
     metacritic: string;
     generes: Array<Genre>;
-    parent_platform: Array<ParentPlatform>;
+    parent_platforms: Array<ParentPlatform>;
     ratings: Array<Rating>;
     screenshots:Array<Screenshots>;
     trailer: Array<Trailer>;
@@ -24,6 +24,7 @@ export interface APIResponse<T> {
  interface ParentPlatform {
      platform: {
          name: string;
+         slug: string;
      };
  }
 
